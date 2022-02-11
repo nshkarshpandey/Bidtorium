@@ -1,0 +1,594 @@
+body {
+  font-size: 16px;
+  color: black;
+  background-color: ghostwhite ;
+  font-family: 'Roboto', sans-serif;
+}
+/* Header */
+.logo {
+  width: 95px;
+  height: 40px;
+  position: absolute;
+  left: 29px;
+  top: 20px;
+}
+
+.logo2{
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 40px;
+  position: absolute;
+  left: 140px;
+  top: 23px;
+
+}
+
+h1.name{
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.name a{
+  text-decoration: none;
+  color: #fd7b26;
+}
+
+.header {
+  margin-top: none;
+  padding: 20px 40px;
+  padding-top: 47px;
+  text-align: center;
+  background: #e4e4e4;
+  color: #000000;
+  font-size: 20px;
+}
+
+.login{
+  position: absolute;
+  height: 40px;
+  top: 25px;
+  right: 30px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 90px;
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 70px;
+  right: 5px;
+  margin-left: 20px;
+}
+
+.tooltiptext:hover{
+  box-shadow: 4px 4px #fd7b26;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left:  -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.login:hover{
+  cursor: pointer;
+}
+
+/*modal login form*/
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+/* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+
+.container{
+  background-color: #e4e4e4;
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  left: 447.09px;
+  top: 50px;
+  box-sizing: border-box;
+  border: solid black;
+}
+
+.sign{
+  font-size: 40px;
+  padding-left: 50px;
+}
+
+.container label{
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+#username{
+  width: 310px;
+  background-color: white;
+  border: black;
+}
+
+#username:hover{
+  box-sizing: border-box;
+  box-shadow: 2px 2px #fd7b26;
+}
+
+.pass{
+  position: absolute;
+  left: 93px;
+}
+
+#password{
+  width: 310px;
+  border: black;
+  font-size: 17px;
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+  left: 85px;
+  top: -3px;
+}
+
+.container input[type=text]{
+  background-color: white;
+}
+
+#password:hover{
+  box-sizing: border-box;
+  box-shadow: 2px 2px #fd7b26;
+}
+
+#submit{
+  background-color: white;
+  width: 250px;
+  height: 40px;
+  position: absolute;
+  left: 180px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+#submit:hover{
+  cursor: pointer;
+  box-shadow: 2px 4px #fd7b26;
+}
+
+#togglePassword:hover{
+  color: #fd7b26;
+  cursor: pointer;
+}
+
+#togglePassword{
+  position: absolute;
+  right: 3px;
+}
+
+.fgtpwd{
+  position: absolute;
+  top: 240px;
+  left: 120px;
+  color: black;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: none;
+  border-right: solid;
+  border-color: black;
+  padding-right: 17px;
+  margin-top: 8px;
+}
+
+.fgtpwd:hover{
+  color: #fd7b26;
+}
+
+.acc{
+  position: absolute;
+  top: 240px;
+  right: 50px;
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+  border: none;
+  margin-top: 8px;
+}
+
+.acc:hover{
+  color: #fd7b26;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 95px;
+  left: 35px;
+  margin: 45px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-right: 20px;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+.fb {
+  background-color: #3B5998;
+  opacity: 0.85;
+  color: white;
+  text-decoration: none;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  top: 320px;
+  left: 170px;
+  border-radius: 25px;
+  padding-top: 20px;
+}
+
+.fb:hover{
+  opacity: 1;
+}
+
+.google {
+  background-color: #dd4b39;
+  opacity: 0.85;
+  color: white;
+  text-decoration: none;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  top: 400px;
+  left: 170px;
+  border-radius: 25px;
+  padding-top: 20px;
+}
+
+.google:hover{
+  opacity: 1;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/*sticky header*/
+.sticky{
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top:60px ;
+}
+
+.topnav {
+  width: 100%;
+  background-color: #e4e4e4;
+  text-align: center;
+  padding-bottom: 14px;
+  padding-top: 14px;
+  /*position: sticky;
+  top: 0;*/
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: center;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px ;
+}
+
+.topnav a.active {
+  background-color: #fd7b26;
+  color: black;
+}
+
+/* Change the color of links on hover */
+.topnav > .tophead a:hover {
+  background-color: #Fd7b26;
+}
+
+/* the hr tag */
+hr.line { 
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.bars {
+  cursor: pointer;
+  position: absolute;
+  left: 30px;
+  top: 75px;
+  font-size: 35px !important ;
+  width: 20px !important;
+  color: black;
+}
+
+.bars:hover{
+  color: #fd7b26;
+}
+
+.overlay{
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1 ; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(228,228,228, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.overlay-content{
+  postion: relative;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay-content a {
+  padding-left: 20px;
+  padding-bottom: 30px;
+  text-decoration: none;
+  text-align: 20% ;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay-content a:hover{
+  color: #fd7b26;
+}
+ 
+.closebtn:hover{
+  color: #fd7b26;
+  cursor: pointer;
+}
+
+.closebtn{
+  padding-left: 70px !important;
+}
+
+.overlay .closebtn{
+  position: absolute;
+  top: -5px;
+  left: 250px;
+  font-size: 40px;
+}
+
+.searchbtn{
+  height: 40px;
+  position: absolute;
+  top: 78px;
+  left: 1100px ;
+}
+
+.searchbtn:hover{
+  box-shadow: 3px 3px #fd7b26;
+}
+
+.tophead input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 3px solid #bbb;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #e4e4e4;
+  background-image: url('');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.tophead input[type=text]:focus {
+  width: 300px;*/
+}
+
+/*header end*/
+
+.product-page{
+  margin-top: 5px;
+}
+/*styling front of card */
+ 
+.card{
+  padding: 2.5px;
+  width: 250px;
+  text-align: center;
+  font-family: arial;
+  color: black;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+ .card button{
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #Fd7b26;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* Flip Card */
+.flip-card-1, .flip-card-2, .flip-card-3, .flip-card-4, .flip-card-5, .flip-card-6, .flip-card-7, .flip-card-8, .flip-card-9, .flip-card-10{
+  background-color: transparent;
+  width: 250px;
+  height: 360.77px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-card-1, .flip-card-2, .flip-card-3, .flip-card-4,.flip-card-5, .flip-card-6, .flip-card-7, .flip-card-8, .flip-card-9, .flip-card-10{
+  transition: all 0.5s ease-out;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flipped{
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.round{
+  transform: scale(1.0);
+}
+
+.flip-card-inner{
+  width: 250px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position:absolute;
+  left: 5px;
+  right: 20px;
+  width: 250px;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: ghostwhite;
+  color: black;
+}
+.flip-card-front img{
+  display: inline;
+}
+
+/* Style the back side */
+
+.back_b_1, .back_b_2, .back_b_3, .back_b_4, .back_b_5, .back_b_6, .back_b_7, .back_b_8, .back_b_9, .back_b_10{
+  border: solid #fd7b26;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 120px;
+  cursor: pointer;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg)
+}
+
+.flip-card-back {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: #e4e4e4;
+  color: black;
+  transform: rotateY(180deg);
+  height: 360.25px ;
+}
+
+/*styling arrows*/
+.slick-next{
+  right: -3px;
+}
+
+.slick-prev{
+ display: none !important;
+}
+
+.slick-next:before{
+  color: #fd7b26;
+}
+
+.slick-prev:before{
+  color: #fd7b26;
+}
+
+/*footer*/
+.footer{
+  background-color: #e4e4e4;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+    

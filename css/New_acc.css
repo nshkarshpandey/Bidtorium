@@ -1,0 +1,451 @@
+.bars{
+  display: none;
+}
+
+.personal label{
+  all: revert;
+}
+
+.personal{
+  background-color: #e4e4e4;
+  box-sizing: border-box;
+  border-top: solid;
+  border-bottom: solid;
+  border-radius: 20px;
+  font-size: 17px ;
+  border-color: #fd7b26;
+  height: 400px;
+  width: 600px;
+  position: absolute;
+  left: 450px;
+  top: 120px;
+}
+
+.personal input{
+  width: 255px;
+  border: 0px;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.personal input:hover{
+  box-shadow: 2px 2px #fd7b26;
+}
+
+.per_text{
+  background-color: #e4e4e4;
+  box-sizing: border-box;
+  border: 1.5px solid;
+  border-color: #fd7b26;
+  z-index: 1;
+  position: absolute;
+  left: 480px;
+  top: 85px;
+  padding: 7px;
+  border-radius: 4px;
+}
+
+.first label{
+  position: absolute;
+  top: 35px;
+  left: 10px;
+}
+
+#firstname{
+  position: absolute;
+  top: 65px;
+  left: 10px;
+}
+
+
+.last label{
+  position: absolute;
+  top: 35px;
+  left: 300px;
+}
+
+#lastname{
+  position: absolute;
+  left:300px ;
+  top: 65px;
+}
+
+
+.mail label{
+  position: absolute;
+  left: 10px;
+  top: 115px;
+}
+
+#email{
+  position: absolute;
+  left: 10px;
+  top: 145px;
+}
+
+
+.user label{
+  position: absolute;
+  top: 115px;
+  left: 300px;
+}
+
+#uname{
+  position: absolute;
+  top: 145px;
+  left: 300px;
+}
+
+.word label{
+  position: absolute;
+  top: 200px;
+  left: 10px;
+}
+
+#paswrd{
+  position: absolute;
+  top: 230px;
+  left: 10px;
+}
+
+#togglePaswrd{
+  position: absolute;
+  top: 233px;
+  left: 255px;
+}
+
+#togglePaswrd:hover{
+  color: #fd7b26;
+  cursor: pointer;
+}
+
+.con label{
+  position: absolute;
+  top: 200px;
+  left: 300px;
+}
+
+#conpass{
+  position: absolute;
+  top: 230px;
+  left: 300px;
+}
+
+#toggleconpass{
+  position: absolute;
+  top: 233px;
+  left: 545px;
+}
+
+#toggleconpass:hover{
+  color: #fd7b26;
+  cursor: pointer;
+}
+
+.mob label{
+  position: absolute;
+  top: 290px;
+  left: 10px;
+}
+
+#num{
+  position: absolute;
+  top: 320px;
+  left: 160px;
+  width: 200px;
+}
+
+#mobcode{
+  width: 145px;
+  border: 0px;
+  border-radius: 5px ;
+  padding: 7px;
+  position: absolute;
+  top: 320px;
+  left: 10px;
+}
+
+#mobcode:hover{
+  box-shadow: 2px 2px #fd7b26;
+}
+
+.submit{
+  display: none;
+}
+
+.profile{
+  background-color: #e4e4e4;
+  box-sizing: border-box;
+  border-top: solid;
+  border-bottom: solid;
+  border-radius: 20px;
+  font-size: 20px ;
+  border-color: #fd7b26;
+  height: 250px;
+  width: 600px;
+  position: absolute;
+  left: 450px;
+  top: 570px;
+  user-select: none;
+}
+
+.profile input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+} 
+
+
+.checkmark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.checkmark:hover{
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.profile input:checked ~ .checkmark{
+  background-color: #fd7b26;
+}
+
+.checkmark:after{
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.profile input:checked ~ .checkmark:after{
+  display: block ;
+}
+
+.profile .checkmark:after{
+  top: 6px;
+  left: 6px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+.profiletxt{
+  background-color: #e4e4e4;
+  box-sizing: border-box;
+  border: 1.5px solid;
+  border-color: #fd7b26;
+  z-index: 1;
+  position: absolute;
+  left: 480px;
+  top: 537px;
+  padding: 7px;
+  border-radius: 4px;
+}
+
+.gtext{
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+
+
+.male{
+  position: absolute;
+  left: 11px;
+  top: 85px;
+}
+
+#mcheck{
+  position: absolute;
+  left: 53px;
+  top: 4px;
+}
+
+.female{
+  position: absolute;
+  left: 120px ;
+  top: 85px;
+}
+
+#fcheck{
+  position: absolute;
+  left: 75px;
+  top: 4px;
+}
+
+.other{
+  position: absolute;
+  left: 250px;
+  top: 85px;
+
+}
+
+#ocheck{
+  position: absolute;
+  left: 60px;
+  top: 4px;
+}
+
+.bdaytxt{
+  position: absolute;
+  top: 135px;
+  left: 10px;
+}
+
+.bday select{
+  position: relative;
+  top: 120px;
+  left: 10px;
+  font-size: 17px;
+  width: 145px;
+  border: 0px;
+  border-radius: 5px ;
+  padding: 7px;
+}
+.bday select:hover{
+  box-shadow: 2px 2px #fd7b26;
+}
+
+.add{
+  background-color: #e4e4e4;
+  box-sizing: border-box;
+  border-top: solid;
+  border-bottom: solid;
+  border-radius: 20px;
+  font-size: 20px ;
+  border-color: #fd7b26;
+  height: 720px;
+  width: 600px;
+  position: absolute;
+  left: 450px;
+  top: 870px;
+  user-select: none;
+}
+
+.add input{
+  width: 300px;
+  border: 0px;
+  padding: 7px;
+  border-radius: 5px
+}
+
+.add input:hover{
+  box-shadow: 2px 2px #fd7b26;
+}
+
+.addtxt{
+  background-color: #e4e4e4;
+  box-sizing: border-box;
+  border: 1.5px solid;
+  border-color: #fd7b26;
+  z-index: 1;
+  position: absolute;
+  left: 480px;
+  top: 837px;
+  padding: 7px;
+  border-radius: 4px;
+}
+
+.country{
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+#coun{
+  position: absolute;
+  top: 40px;
+  left: 5px;
+}
+
+.primaddtxt{
+  background-color: #e4e4e4;
+  box-sizing: border-box;
+  border: 1.5px solid;
+  border-color: #fd7b26;
+  position: absolute;
+  left: 10px;
+  top: 120px;
+  padding: 7px;
+  border-radius: 4px;
+}
+
+.houseno{
+  position: absolute;
+  top: 200px;
+  left: 10px;
+}
+
+#hou{
+  position: absolute;
+  top: 40px;
+  left: 5px;
+}
+
+.block{
+  position: absolute;
+  top: 300px;
+  left: 10px;
+}
+
+#blo{
+  position: absolute;
+  top: 40px;
+  left: 10px;
+}
+
+.street{
+  position: absolute;
+  top: 400px;
+  left: 10px;
+}
+
+#strna{
+  position: absolute;
+  top: 40px;
+  left: 10px;
+}
+
+.city{
+  position: absolute;
+  top: 500px;
+  left: 10px;
+}
+
+#ct{
+  position: absolute;
+  top: 40px;
+  left: 5px;
+  width: 200px;
+}
+
+.state{
+  position: absolute;
+  top: 500px;
+  left: 300px;
+}
+
+#state{
+  position: absolute;
+  top: 40px;
+  left: 5px;
+  width: 200px;
+}
+
+.pcode{
+  position: absolute;
+  top: 600px;
+  left: 10px;
+}
+
+#postal{
+  position: absolute;
+  top: 40px;
+  left: 5px;
+}

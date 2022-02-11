@@ -1,0 +1,59 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: ghostwhite ;
+  font-family: 'Roboto', sans-serif;
+}
+/* Header */
+
+.logo{
+  display: inline;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header {
+  text-align: left;
+  background: #e4e4e4;
+  color: #000000;
+  padding: 20px 10px;
+}
+h1.name{
+  margin-top: 0em;
+  margin-bottom: 0em;
+  display: inline;
+}
+
+.topnav {
+  background-color: #e4e4e4;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 14px;
+  padding-top: 14px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: center;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px ;
+}
+
+.topnav a.active {
+  background-color: #fd7b26;
+  color: black;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #Fd7b26;
+}
+
+/* the hr tag */
+hr.line { 
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
