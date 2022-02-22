@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <title>Bidtorium.com</title>
+    <link rel = "icon" href="images/logo2cpy.png" type="image">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/3da531e6ea.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/prodpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="index.html"><img class="logo" src="images/logo1cpy.jpeg"></a>
+            <a href="index.html"><img class="logo2" src="images/name.png"></a>
+            <div class="tooltip">
+                <img class="login" src="images/login.png"></a>
+                <a class="tooltiptext" onclick="document.getElementById('id01').style.display = 'block'">Login</a>
+                <div id="id01" class="modal">
+                  <form class="container animate" method="post">
+                <h1 class="sign">Sign In</h1>
+                <p>
+                  <label for="username" class="user">Email/Username:</label>
+                  <input type="text" name="username" id="username">
+                </p>
+                <p>
+                  <label for="password" class="pass">Password:</label>
+                  <input type="password" name="password" id="password" />
+                  <i class="bi bi-eye-slash" id="togglePassword"></i>
+                </p>
+                <button type="submit" id="submit" class="submit">Log In</button>
+                <a href="#" class="fgtpwd">Forgot Password?</a>
+                <a href="New_acc.html" class="acc">Create New Account</a>
+                <div class="separator">Or</div>
+                <a class="fa fa-facebook" id="fbbtn" href="#"> Login with Facebook</a>
+                <a href="#" class="fa fa-google" id="google"> 
+                  Login with Google
+                </a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+        <hr class="line">
+          <div class="topnav" id="navbar">
+            <div class="tophead">
+                <a href="index.html">Home</a>
+                <a href="live.html">Live Auctions </a>
+                <a href="upcoming.html">Upcoming Auction </a>
+                <a href="past.html">Past Auction </a>
+                <a href="how.html">How to Bid </a>
+                <span class="bars" onclick="openNav()" id="navbar"> &#9776;</span>
+                <input class="searchbtn" type="text" name="search" id="navbar" placeholder="Search..">
+              </div>
+          </div>
+      <div id="myNav" class="overlay">
+        <a class="closebtn" onclick="closeNav()"> &times; </a>
+        <div class="overlay-content">
+          <p class="collect" id="collect" onclick="myFunction()">Collectibles <i class="fa fa-caret-down"></i></p>
+            <div class="dropdown-1" id="mydropdown">
+                <p href="#">Jwellery</p>
+                <p href="#">Art</p>
+                <p href="#">Books</p>
+                <p href="#">Stamps</p>
+                <p href="#">Acessories</p>
+            </div>
+          <p class="vint" id="vint">Vintage and Classic <i class="fa fa-caret-down"></i></p>
+            <div class="dropdown-2" id="mydropdown-2">
+                <p href="#">Bike</p>
+                <p href="#">Cars</p>
+                <p href="#">Paintings</p>
+                <p href="#">British India</p>
+                <p href="#">Ancient India</p>
+                <p href="#"></p>
+            </div>
+          <p class="jwell" id="jwell">Jwellery <i class="fa fa-caret-down"></i></p>
+            <div class="dropdown-3" id="mydropdown-3">
+                <p href="#">Collectible</p>
+                <p href="#">Gold</p>
+                <p href="#">Diamond</p>
+                <p href="#">Silver</p>
+                <p href="#">Precious Stone Jwellery</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    </header>
+    <div class="prodcard">
+      <div class="imgcontainer">
+        <div class="mySlides">
+          <img class="prodimg" src="images/watch_1.jpeg">
+        </div>
+        <div class="mySlides">
+          <img class="prodimg" src="images/watch_2.jpeg">
+        </div>
+        <div class="mySlides">
+          <img class="prodimg" src="images/watch_3.jpeg">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" id="demo1"src="images/watch_1.jpeg" style="width:50px" onclick="currentSlide(1)">
+            </div>
+            <div class="column">
+              <img class="demo cursor" id="demo2" src="images/watch_2.jpeg" style="width:50px" onclick="currentSlide(2)">
+            </div>
+            <div class="column">
+              <img class="demo cursor" id="demo3" src="images/watch_3.jpeg" style="width:50px" onclick="currentSlide(3)">
+            </div>
+          </div>
+        </div>
+        <div class="vl-1"></div>
+        <div class="col-6" id="proddes">
+          <h1>White Watch</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <hr>
+          <div class="pricesection">
+            <h3>₹1,186</h3>
+            <button class="buyit">Buy Now</button>
+            <button class="cart" id="cart">Add to Cart</button>
+            <i class="fa-solid fa-cart-arrow-down" id="cartdown"></i>
+            <div class="vl-2"></div>
+            <p class="or">or</p>
+            <div class="vl-3"></div>
+          </div>
+          <div class="makesection">
+            <button class="makeoffer" id="offerbtn">Make Offer</button>
+            <button id="watchlist"><i class="fa-solid fa-eye" id="eye"></i>Add to Watchlist</button>
+          </div>
+        </div>
+        <hr class="hl-1">
+      </div>
+    <div class="offercontainer" id="offercontainer">
+      <h3>Make Offer(₹)</h3>
+      <div class="hl"></div>
+      <input id="uroffer" type="tel" autocomplete="off" inputmode="decimal" maxlength="10" placeholder="Please Enter your Offer(₹)">
+      <p id="rup">₹</p>
+      <i class="fa-solid fa-xmark" id="clscont"></i>
+      <textarea class="comment"></textarea>
+      <p class="commentxt">Message to the Seller(optional):-</p>
+    </div>
+    <div class="footer">
+    <img src="images/logo1cpy.jpeg">
+    <div class="row" id="row1">
+      <div class="col-3" id="col1"><b>Contact Us:</b></div>
+      <div class="col-3" id="col2"><b>Bidding:</b></div>
+      <div class="col-3" id="col3"><b>Selling:</b></div>
+      <div class="col-3" id="col4"><b>About Us:</b></div>
+    </div>
+    <div class="row" id="row2">
+      <div class="col-3">#144 12th Floor Tower D-3 Sandwoods Opulencia Sector-110 Mohali</div>
+      <a href="how.html" class="col-3" id="row2-2">How to bid?</a>
+      <a href="seller.html" class="col-3" id="row2-3">Become a seller</a>
+      <a href="#" class="col-3" id="row2-4">Company Info</a>
+    </div>
+    <div class="row" id="row3">
+      <div class="col-3">Give us a call: 
+        <a href="tel:+916283303349">
+          +916283303349
+        </a>
+      </div>
+      <div class="col-3"></div>
+      <a href="#" class="col-3" id="row3-3">How to Sell?</a>
+      <a href="#" class="col-3" id="row3-4">Our Policies</a>
+    </div>
+    <div class="row" id="row4">
+      <div class="col-3">Write us: 
+        <a href="mailto:nshkarshpandey@gmail.com">nshkarshpandey@gmail.com</a>
+      </div>
+      <div class="col-3"></div>
+      <a href="tel:" class="col-3" id="row4-3">Seller Helpline 24x7</a>
+      <a href="#" class="col-3" id="row4-4">Advertise With Us</a>
+    </div>
+    <div class="row" id="row5">
+      <div class="col-3"></div>
+      <div class="col-3"></div>
+      <a href="#" class="col-3" id="row5-3">Increase Reach of your Product</a>
+      <a href="#" class="col-3" id="row5-4">Terms and Conditions</a>
+    </div>
+  <hr class="line3">
+  <div class="cnct">
+    <p class="cnctxt"><b>Connect with Us:</b></p>
+    <a class="fa fa-facebook-square" id="ftfb" href="#"></a>
+    <a class="fa fa-instagram" id="ftig" href="#"></a>
+    <a class="fa fa-linkedin-square" id="ftlin" href="#"></a>
+    <a class="fa fa-twitter" id="fttwi" href="#"></a>
+  </div>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/index.js"></script>
+<script src="js/prodpage.js"></script>
+</html>

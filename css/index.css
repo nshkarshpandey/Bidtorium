@@ -114,6 +114,7 @@ h1.name{
 
 
 .container{
+  z-index: 4;
   background-color: #e4e4e4;
   position: absolute;
   width: 550px;
@@ -420,10 +421,10 @@ hr.line {
   margin-top: 30px;
 }
 
-.overlay-content a {
+.overlay-content p {
   padding-left: 20px;
-  padding-bottom: 30px;
-  text-decoration: none;
+  padding-bottom: 10px;
+  text-decoration: ;
   text-align: 20% ;
   font-size: 25px;
   color: black;
@@ -431,8 +432,108 @@ hr.line {
   transition: 0.3s;
 }
 
-.overlay-content a:hover{
+.overlay-content p:hover{
+  cursor: pointer;
   color: #fd7b26;
+}
+
+.collect{
+  position: relative;
+  left: 5px;
+  top: 20px;
+}
+
+.dropdown-1{
+  display: none;
+  transition: 0.4s ease-in ;
+}
+
+.dropdown-1 p{
+  text-align: center;
+  font-size: 17px;
+  box-sizing: border-box;
+  border: black;
+  margin: 5px;
+  border-radius: 15px;
+  width: 150px;
+  position: relative;
+  top: 5px;
+  left: 123px;
+  padding: 2px;
+}
+
+.dropdown-1 p:hover{
+  color: black;
+  cursor: pointer;
+  background-color: #fd7b26;
+}
+
+.vint{
+  position: relative;
+  left: 5px;
+  top: 15px;
+}
+
+.dropdown-2{
+  display: none;
+  transition: 0.4s ease-in ;
+}
+
+.dropdown-2 p{
+  text-align: center;
+  font-size: 17px;
+  box-sizing: border-box;
+  border: black;
+  margin: 5px;
+  border-radius: 15px;
+  width: 150px;
+  position: relative;
+  top: 5px;
+  left: 125px;
+  padding: 2px;
+}
+
+.dropdown-2 p:hover{
+  color: black;
+  cursor: pointer;
+  background-color: #fd7b26;
+}
+
+.jwell{
+  position: relative;
+  left: 5px;
+  top: 15px;
+  transition-delay: 1s;
+}
+
+.dropdown-3{
+  display: none;
+  transition-delay: 1s;
+}
+
+.dropdown-3 p{
+  text-align: center;
+  font-size: 17px;
+  box-sizing: border-box;
+  border: black;
+  margin: 5px;
+  border-radius: 15px;
+  width: 150px;
+  position: relative;
+  top: 5px;
+  left: 120px;
+  padding: 2px;
+}
+
+.dropdown-3 p:hover{
+  color: black;
+  cursor: pointer;
+  background-color: #fd7b26;
+}
+
+
+.show{
+  display: block;
 }
 
 .closebtn{
@@ -488,6 +589,11 @@ hr.line {
 
 /*header end*/
 
+.show{
+  display: block !important;
+}
+
+
 .product-page{
   margin-top: 5px;
 }
@@ -524,6 +630,8 @@ hr.line {
   opacity: 0.7;
   cursor: pointer;
 }
+
+
 
 /* Flip Card */
 .flip-card-1, .flip-card-2, .flip-card-3, .flip-card-4, .flip-card-5, .flip-card-6, .flip-card-7, .flip-card-8, .flip-card-9, .flip-card-10{
@@ -585,8 +693,40 @@ hr.line {
   padding: 0px;
 }
 
-.flip-card-front img{
+#flipimg{
   display: inline;
+  width: 150px;
+  height: 150px;
+}
+
+#imglay{
+  color: black;
+  text-decoration: none;
+  display: none;
+  font-size: 20px;
+  padding: 1px;
+  width: 150px;
+  height: 30px;
+  background-color: #fd7b26;
+  opacity: 0.6;
+  z-index: 1;
+  position: absolute;
+  top: 120px;
+  left: 50px;
+  transition: 0.4s;
+}
+
+#hoview:hover ~ #imglay{
+  display: block;
+}
+
+#imglay:hover{
+  display: block;
+  cursor: pointer;
+}
+
+#hoview:hover{
+  cursor: pointer;
 }
 
 .line2{
@@ -628,6 +768,8 @@ hr.line {
 }
 
 .slick-next:before{
+  position: relative;
+  right: 10px;
   color: #fd7b26;
 }
 
@@ -641,7 +783,7 @@ hr.line {
   padding: 50px;
   background-color: #e4e4e4;
   position: relative;
-  bottom: 0;
+  bottom: 0px;
   top: 300px;
   left: 0;
   width: 100%;

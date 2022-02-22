@@ -1,0 +1,374 @@
+.prodcard{
+	width: 90%;
+	height: 700px;
+	position: relative;
+	left: 75px;
+	top: 50px;
+}
+
+.prodimg{
+	width: 250px;
+	height: 300px;
+	position: relative;
+	top: 50px;
+	left: 100px;
+	border-style: hidden;
+}
+/*image slider*/
+/* Position the image container (needed to position the left and right arrows) */
+.imgcontainer {
+  position: relative;
+  top: -30px;
+  left: -40px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 225px;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  left: 370px;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+	position: absolute;
+	left: 30px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(253, 123, 38, 0.8);
+	color: black ;
+	text-decoration: none;
+}
+
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+/* aliginig images */
+
+#demo1{
+	position: relative;
+	left: 50px;
+	top: 80px;
+}
+#demo1:hover{
+	box-shadow: 2px 2px 1px 1px #fd7b26 ;
+}
+
+#demo2{
+	position: relative;
+	left: -40px;
+	top: 80px;
+}
+#demo2:hover{
+	box-shadow: 2px 2px 1px 1px #fd7b26 ;
+}
+
+#demo3{
+	position: relative;
+	left: -120px;
+	top: 80px;
+}
+#demo3:hover{
+	box-shadow: 2px 2px 1px 1px #fd7b26 ;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.vl-1{
+	height: 450px;
+	border-left: dashed;
+	border-width: 2px;
+	position: absolute;
+	left: 470px;
+	top: 0px;
+}
+/*image slider end*/
+
+#proddes{
+	position: relative;
+	left: 550px;
+	top: -350px;
+	text-align: center;
+}
+
+#proddes hr{
+	border-top: 1.5px solid;
+	opacity: 1;
+	border-style: dashed;
+}
+
+.pricesection{
+	text-align: left;
+}
+
+.pricesection h3{
+	position: relative;
+	left: 100px;
+}
+
+.buyit{
+	border: 0px;
+	height: 40px;
+	width: 250px;
+	border-radius: 15px;
+	background: #fd7b26;
+	opacity: 0.85;
+	position: relative;
+	left: 25px;
+}
+.buyit:hover{
+	opacity: 1;
+}
+
+.cart{
+	border: 0px;
+	height: 40px;
+	width: 250px;
+	border-radius: 15px;
+	background: #fd7b26;
+	opacity: 0.85;
+	position: absolute;
+	left: 43px;
+	top: 250px;
+}
+.cart:hover{
+	opacity: 1;
+}
+#cart:hover + #cartdown{
+	opacity: 1;
+	color: #e4e4e4;
+}
+
+#cartdown{
+	position: absolute;
+	left: 70px;
+	top: 261px;
+	opacity: 0.7;
+}
+#cartdown:hover{
+	cursor: pointer;
+}
+
+.vl-2{
+	height: 60px;
+	border-left: dashed;
+	position: absolute;
+	left: 333px;
+	top: 160px;
+}
+.or{
+	color: #fd7b26;
+	font-size: 20px;
+	position: absolute;
+	left: 324px;
+	top: 215px;
+}
+
+.vl-3{
+	height: 60px;
+	border-left: dashed;
+	position: absolute;
+	left: 333px;
+	top: 245px;
+}
+
+.makeoffer{
+	border: 0px;
+	height: 40px;
+	width: 250px;
+	border-radius: 15px;
+	background: #fd7b26;
+	opacity: 0.85;
+	position: absolute;
+	left: 370px;
+	top: 200px;
+}
+.makeoffer:hover{
+	opacity: 1;
+}
+#watchlist{
+	border: solid;
+	height: 40px;
+	width: 250px;
+	border-color: #fd7b26;
+	border-radius: 15px;
+	background: #e4e4e4;
+	opacity: 0.85;
+	position: absolute;
+	left: 370px;
+	top: 250px;
+}
+#watchlist:hover{
+	opacity: 1;
+	background-color: #fd7b26;
+}
+
+#eye{
+	color: black;
+	position: relative;
+	left: -10px;
+}
+
+.offercontainer{
+	display: none;
+	z-index: 1;
+	background-color:#e4e4e4;
+	border: solid #fd7b26;
+	border-radius:30px ;
+	width: 500px;
+	height: 400px;
+	position: absolute;
+	top: 200px;
+	left: 550px;
+}
+.show{
+ 	display: block;
+ }
+.offercontainer h3{
+	position: relative;
+	left: 170px;
+	top: 20px;
+}
+.hl{
+	border:0px;
+	width: 250px;
+	border-bottom: dashed #fd7b26;
+	position: relative;
+	top: 30px;
+	left: 130px;
+}
+
+
+#uroffer{
+	text-align: center;
+	font-size: 18px;
+	background-color: #e4e4e4;
+	width: 300px;
+	padding: 10px;
+	border: 0px;
+	border-bottom: solid #fd7b26;
+	border-width: 2px;
+	position: relative;
+	top: 60px;
+	left: 100px;
+}
+
+#uroffer:focus{
+	outline: none;
+	box-shadow: 0px 2px #fd7b26;
+}
+#uroffer:hover{
+	box-shadow: 0px 2px #fd7b26;
+}
+#uroffer:focus ~ #rup{
+	display: block;
+}
+
+#rup{
+	display: none;
+	font-size: 20px;
+	position: absolute;
+	left: 100px;
+	top: 112px;
+}
+
+.comment{
+	font-size: 15px;
+	border-radius: 20px;
+	box-shadow: 0 0 0 1.5px #fd7b26;
+	border: 0px solid transparent;
+	height: 100px;
+	width: 400px;
+	position: relative;
+	left: 50px;
+	top: 120px;
+}
+.comment:hover{
+	box-shadow: 2px 2px 2px 2px #fd7b26;
+}
+
+.comment:focus{
+	outline: none;
+	box-shadow: 0 0 0 1.5px #fd7b26;
+}
+
+.commentxt{
+	position: relative;
+	top: -20px;
+	left: 20px;
+}
+
+#clscont{
+	font-size: 30px;
+	position: relative;
+	top: -32.5px;
+	right: -150px;
+}
+
+#clscont:hover{
+	cursor: pointer;
+	color: #fd7b26;
+}
+
+.hl-1{
+	position: relative;
+	top: -120px;
+	border: 0px;
+	border-bottom: solid ;
+	opacity: 0.3;
+	border-width: 2px;
+}

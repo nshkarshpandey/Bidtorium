@@ -86,14 +86,14 @@
 
 .user label{
   position: absolute;
-  top: 115px;
-  left: 300px;
+  top: 98px;
+  left: 470px;
 }
 
 #uname{
   position: absolute;
-  top: 145px;
-  left: 300px;
+  top: 128px;
+  left: 470px;
 }
 
 .word label{
@@ -299,6 +299,7 @@
 }
 
 .bday select{
+  outline: none;
   position: relative;
   top: 120px;
   left: 10px;

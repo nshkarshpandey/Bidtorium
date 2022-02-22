@@ -217,7 +217,7 @@ function closeNav(){
 
 /*for sticky*/
 
-window.onscroll = function() {myFunction()};
+{window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
@@ -229,7 +229,7 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
+}
 
 /*sticky end*/
 
@@ -259,4 +259,27 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+}
+
+/*dropdown menu*/
+
+{document.getElementById("collect").onclick = function() {myFunction()};
+
+function myFunction() {
+  document.getElementById("mydropdown").classList.toggle("show");
+}
+}
+
+{document.getElementById("vint").onclick = function() {myFunction()};
+
+function myFunction() {
+  document.getElementById("mydropdown-2").classList.toggle("show");
+}
+}
+
+{document.getElementById("jwell").onclick = function() {myFunction()};
+
+function myFunction() {
+  document.getElementById("mydropdown-3").classList.toggle("show");
+}
 }

@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -62,49 +63,73 @@
 			    <a href="past.html">Past Auction </a>
 			    <a href="how.html">How to Bid </a>
 			    <span class="bars" onclick="openNav()" id="navbar"> &#9776;</span>
-			    <input class="searchbtn" type="text" name="search" id="navbar"placeholder="Search..">
+			    <input class="searchbtn" type="text" name="search" id="navbar" placeholder="Search..">
 			  </div>
 		  </div>
       <div id="myNav" class="overlay">
       	<a class="closebtn" onclick="closeNav()"> &times; </a>
         <div class="overlay-content">
-      	  <a href="seller.html">Become a Seller</a>
-      	  <a href="about.html">About Us</a>
-      	  <a href="contact.html">Contact Us</a>
+      	  <p class="collect" id="collect" onclick="myFunction()">Collectibles <i class="fa fa-caret-down"></i></p>
+      	  	<div class="dropdown-1" id="mydropdown">
+      	  		<p href="#">Jwellery</p>
+      	  		<p href="#">Art</p>
+      	  		<p href="#">Books</p>
+      	  		<p href="#">Stamps</p>
+      	  		<p href="#">Acessories</p>
+      	  	</div>
+      	  <p class="vint" id="vint">Vintage and Classic <i class="fa fa-caret-down"></i></p>
+      	  	<div class="dropdown-2" id="mydropdown-2">
+      	  		<p href="#">Bike</p>
+      	  		<p href="#">Cars</p>
+      	  		<p href="#">Paintings</p>
+      	  		<p href="#">British India</p>
+      	  		<p href="#">Ancient India</p>
+      	  		<p href="#"></p>
+      	  	</div>
+      	  <p class="jwell" id="jwell">Jwellery <i class="fa fa-caret-down"></i></p>
+      	  	<div class="dropdown-3" id="mydropdown-3">
+      	  		<p href="#">Collectible</p>
+      	  		<p href="#">Gold</p>
+      	  		<p href="#">Diamond</p>
+      	  		<p href="#">Silver</p>
+      	  		<p href="#">Precious Stone Jwellery</p>
+      	  	</div>
         </div>
       </div>
     </div>
 	</header>
 	<div class="product-page slider">
 		<div class="card">
-			<div class="flip-card-1">
-				<div class="flip-card-inner">
-					<div class="flip-card-front">
-						<a href="live.html"><img src="https://static.wixstatic.com/media/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.jpg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.webp" alt="Avatar" style="width: 150px; height: 150px;"></a>
-						<h3 class="card-title">White Watch</h3>
-						<p class="price">Current Bid=$20.99</p>
-						<hr class="line2">
-						<p></p>
-						<p class="price2"> Next Valid Bid=$24.99</p>
-						<p><button class="front_b_1">Description</button></p>
-					</div>
-					<div class="flip-card-back">
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-						<p><i class="back_b_1"></i></p>
-					</div>
-				</div>
-			</div>
-		</div>
+      <div class="flip-card-1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+          <a href="prodpage.html" id="hoview"><img src="https://static.wixstatic.com/media/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.jpg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.webp" alt="Avatar" id="flipimg"></a>
+          <a id="imglay" href="live.html">View</a>
+            <h3 class="card-title">White Watch</h3>
+            <p class="price">Buy Now= ₹1,186</p>
+            <hr class="line2">
+            <p></p>
+            <p class="myprice2" id="price2"> Make Offer(above)=₹500</p>
+            <p><button class="front_b_1">Description</button></p>
+          </div>
+          <div class="flip-card-back">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p><i class="back_b_1"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
 		<div class="card">
 			<div class="flip-card-2">
 				<div class="flip-card-inner">
 					<div class="flip-card-front">
-						<a href="live.html"><img src="https://static.wixstatic.com/media/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.jpg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.webp" alt="Avatar" style="width: 150px; height: 150px;"></a>
+					<a href="live.html" id="hoview"><img src="https://static.wixstatic.com/media/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.jpg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.webp" alt="Avatar" id="flipimg"></a>
+          <a id="imglay" href="live.html">View</a>
 						<h3 class="card-title">White Watch</h3>
-						<p class="price">Current Bid=$20.99</p>
-						<hr class="line2">
-						<p></p>
-						<p class="price2"> Next Valid Bid=$24.99</p>
+						<p class="price">Buy Now= ₹1,186</p>
+            <hr class="line2">
+            <p></p>
+            <p class="price2"> Make Offer(above)=₹500</p>
 						<p><button class="front_b_2">Description</button></p>
 					</div>
 					<div class="flip-card-back">
@@ -118,12 +143,13 @@
 			<div class="flip-card-3">
 				<div class="flip-card-inner">
 					<div class="flip-card-front">
-						<a href="live.html"><img src="https://static.wixstatic.com/media/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.jpg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.webp" alt="Avatar" style="width: 150px; height: 150px;"></a>
+						<a href="live.html" id="hoview"><img src="https://static.wixstatic.com/media/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.jpg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.webp" alt="Avatar" id="flipimg"></a>
+          <a id="imglay" href="live.html">View</a>
 						<h3 class="card-title">White Watch</h3>
-						<p class="price">Current Bid=$20.99</p>
-						<hr class="line2">
-						<p></p>
-						<p class="price2"> Next Valid Bid=$24.99</p>
+						<p class="price">Buy Now= ₹1,186</p>
+            <hr class="line2">
+            <p></p>
+            <p class="price2"> Make Offer(above)=₹500</p>
 						<p><button class="front_b_3">Description</button></p>
 					</div>
 					<div class="flip-card-back">
@@ -137,12 +163,13 @@
 			<div class="flip-card-4">
 				<div class="flip-card-inner">
 					<div class="flip-card-front">
-						<a href="live.html"><img src="https://static.wixstatic.com/media/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.jpg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.webp" alt="Avatar" style="width: 150px; height: 150px;"></a>
+						<a href="live.html" id="hoview"><img src="https://static.wixstatic.com/media/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.jpg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.webp" alt="Avatar" id="flipimg"></a>
+          <a id="imglay" href="live.html">View</a>
 						<h3 class="card-title">White Watch</h3>
-						<p class="price">Current Bid=$20.99</p>
-						<hr class="line2">
-						<p></p>
-						<p class="price2"> Next Valid Bid=$24.99</p>
+						<p class="price">Buy Now= ₹1,186</p>
+            <hr class="line2">
+            <p></p>
+            <p class="price2"> Make Offer(above)=₹500</p>
 						<p><button class="front_b_4">Description</button></p>
 					</div>
 					<div class="flip-card-back">
@@ -156,12 +183,13 @@
 			<div class="flip-card-5">
 				<div class="flip-card-inner">
 					<div class="flip-card-front">
-						<a href="live.html"><img src="https://static.wixstatic.com/media/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.jpg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.webp" alt="Avatar" style="width: 150px; height: 150px;"></a>
+						<a href="live.html" id="hoview"><img src="https://static.wixstatic.com/media/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.jpg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.webp" alt="Avatar" id="flipimg"></a>
+          <a id="imglay" href="live.html">View</a>
 						<h3 class="card-title">White Watch</h3>
-						<p class="price">Current Bid=$20.99</p>
-						<hr class="line2">
-						<p></p>
-						<p class="price2"> Next Valid Bid=$24.99</p>
+						<p class="price">Buy Now= ₹1,186</p>
+            <hr class="line2">
+            <p></p>
+            <p class="price2"> Make Offer(above)=₹500</p>
 						<p><button class="front_b_5">Description</button></p>
 					</div>
 					<div class="flip-card-back">
@@ -175,12 +203,13 @@
 			<div class="flip-card-6">
 				<div class="flip-card-inner">
 					<div class="flip-card-front">
-						<a href="live.html"><img src="https://static.wixstatic.com/media/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.jpg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.webp" alt="Avatar" style="width: 150px; height: 150px;"></a>
+						<a href="live.html" id="hoview"><img src="https://static.wixstatic.com/media/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.jpg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.webp" alt="Avatar" id="flipimg"></a>
+          <a id="imglay" href="live.html">View</a>
 						<h3 class="card-title">White Watch</h3>
-						<p class="price">Current Bid=$20.99</p>
-						<hr class="line2">
-						<p></p>
-						<p class="price2"> Next Valid Bid=$24.99</p>
+						<p class="price">Buy Now= ₹1,186</p>
+            <hr class="line2">
+            <p></p>
+            <p class="price2"> Make Offer(above)=₹500</p>
 						<p><button class="front_b_6">Description</button></p>
 					</div>
 					<div class="flip-card-back">
@@ -194,12 +223,13 @@
 			<div class="flip-card-7">
 				<div class="flip-card-inner">
 					<div class="flip-card-front">
-						<a href="live.html"><img src="https://static.wixstatic.com/media/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.jpg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.webp" alt="Avatar" style="width: 150px; height: 150px;"></a>
+						<a href="live.html" id="hoview"><img src="https://static.wixstatic.com/media/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.jpg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.webp" alt="Avatar" id="flipimg"></a>
+          <a id="imglay" href="live.html">View</a>
 						<h3 class="card-title">White Watch</h3>
-						<p class="price">Current Bid=$20.99</p>
-						<hr class="line2">
-						<p></p>
-						<p class="price2"> Next Valid Bid=$24.99</p>
+						<p class="price">Buy Now= ₹1,186</p>
+            <hr class="line2">
+            <p></p>
+            <p class="price2"> Make Offer(above)=₹500</p>
 						<p><button class="front_b_7">Description</button></p>
 					</div>
 					<div class="flip-card-back">
@@ -213,12 +243,13 @@
 			<div class="flip-card-8">
 				<div class="flip-card-inner">
 					<div class="flip-card-front">
-						<a href="live.html"><img src="https://static.wixstatic.com/media/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.jpg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.webp" alt="Avatar" style="width: 150px; height: 150px;"></a>
+						<a href="live.html" id="hoview"><img src="https://static.wixstatic.com/media/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.jpg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.webp" alt="Avatar" id="flipimg"></a>
+          <a id="imglay" href="live.html">View</a>
 						<h3 class="card-title">White Watch</h3>
-						<p class="price">Current Bid=$20.99</p>
-						<hr class="line2">
-						<p></p>
-						<p class="price2"> Next Valid Bid=$24.99</p>
+						<p class="price">Buy Now= ₹1,186</p>
+            <hr class="line2">
+            <p></p>
+            <p class="price2"> Make Offer(above)=₹500</p>
 						<p><button class="front_b_8">Description</button></p>
 					</div>
 					<div class="flip-card-back">
@@ -232,12 +263,13 @@
 			<div class="flip-card-9">
 				<div class="flip-card-inner">
 					<div class="flip-card-front">
-						<a href="live.html"><img src="https://static.wixstatic.com/media/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.jpg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.webp" alt="Avatar" style="width: 150px; height: 150px;"></a>
+						<a href="live.html" id="hoview"><img src="https://static.wixstatic.com/media/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.jpg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.webp" alt="Avatar" id="flipimg"></a>
+          <a id="imglay" href="live.html">View</a>
 						<h3 class="card-title">White Watch</h3>
-						<p class="price">Current Bid=$20.99</p>
-						<hr class="line2">
-						<p></p>
-						<p class="price2"> Next Valid Bid=$24.99</p>
+						<p class="price">Buy Now= ₹1,186</p>
+            <hr class="line2">
+            <p></p>
+            <p class="price2"> Make Offer(above)=₹500</p>
 						<p><button class="front_b_9">Description</button></p>
 					</div>
 					<div class="flip-card-back">
@@ -251,12 +283,13 @@
 			<div class="flip-card-10">
 				<div class="flip-card-inner">
 					<div class="flip-card-front">
-						<a href="live.html"><img src="https://static.wixstatic.com/media/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.jpg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.webp" alt="Avatar" style="width: 150px; height: 150px;"></a>
+						<a href="live.html" id="hoview"><img src="https://static.wixstatic.com/media/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.jpg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/3c76e2_8891bbe3372a428aac976ac59aa0ac74~mv2.webp" alt="Avatar" id="flipimg"></a>
+          <a id="imglay" href="live.html">View</a>
 						<h3 class="card-title">White Watch</h3>
-						<p class="price">Current Bid=$20.99</p>
-						<hr class="line2">
-						<p></p>
-						<p class="price2"> Next Valid Bid=$24.99</p>
+						<p class="price">Buy Now= ₹1,186</p>
+            <hr class="line2">
+            <p></p>
+            <p class="price2"> Make Offer(above)=₹500</p>
 						<p><button class="front_b_10">Description</button></p>
 					</div>
 					<div class="flip-card-back">
@@ -283,8 +316,8 @@
     </div>
     <div class="row" id="row3">
       <div class="col-3">Give us a call: 
-        <a href="tel:6283303349">
-          6283303349
+        <a href="tel:+916283303349">
+          +916283303349
         </a>
       </div>
       <div class="col-3"></div>
@@ -296,7 +329,7 @@
         <a href="mailto:nshkarshpandey@gmail.com">nshkarshpandey@gmail.com</a>
       </div>
       <div class="col-3"></div>
-      <a href="tel:" class="col-3" id="row4-3">Seller Helpline2 24x7</a>
+      <a href="tel:" class="col-3" id="row4-3">Seller Helpline 24x7</a>
       <a href="#" class="col-3" id="row4-4">Advertise With Us</a>
     </div>
     <div class="row" id="row5">
